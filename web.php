@@ -1,29 +1,30 @@
+<?php $sv = '?v=1'; ?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Venture Theme</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>Janaq</title>
+	<meta name="description" content="Somos Janaq, una empresa conformada por profesionales de amplia experiencia en desarrollo y dirección de proyectos de software, consultoría y capacitación en deversas tecnologías">
+	<meta name="author" content="Janaq">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
 	body {
 	  padding-top: 60px;
 	  padding-bottom: 40px;
 	}
 	</style>
-	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-  <!--[if lt IE9 ]  <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.css"><![endif]-->
-  <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css<?=$sv?>">
+  <link rel="stylesheet" href="css/animate.css<?=$sv?>">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css<?=$sv?>">
+  <!--[if lt IE9 ]  <link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.css<?=$sv?>"><![endif]-->
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css<?=$sv?>" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/style.css<?=$sv?>">
   
 	<!--[if lt IE 9]>
-	<script src="js/html5-3.4-respond-1.1.0.min.js"></script>
+	<script src="js/html5-3.4-respond-1.1.0.min.js<?=$sv?>"></script>
 	<![endif]-->
   
 </head>
@@ -36,11 +37,11 @@
         <div id="primary-nav" class="nav-collapse">
           <ul class="nav">
             <li class="active"><a class="anchorLink" href="#home">Home</a></li>
-            <li><a class="anchorLink" href="#features">Features</a></li>
-            <li><a class="anchorLink" href="#services">Services</a></li>
-            <li><a class="anchorLink" href="#portfolio">Portfolio</a></li>
-            <li><a class="anchorLink" href="#about">About</a></li>
+            <li><a class="anchorLink" id="quienes-somos" href="#features">¿Quienes somos?</a></li>
+            <li><a class="anchorLink" id="servicios" href="#services">Servicios</a></li>
+            <li><a class="anchorLink" id="postula" href="#portfolio">Postula</a></li>
             <li><a class="anchorLink" href="#contact">Contact</a></li>
+            <li><a class="anchorLink" href="#about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/container-->
@@ -51,8 +52,8 @@
     <div class="container">
       <div class="row">
         <div class="span12 headline">
-          <h1>All solutions start at one place</h1>
-          <i class="description">And this is that place. So, let's get started right away</i>
+          <h1>Janaq</h1>
+          <i class="description">Software y Consultoría</i>
         </div><!--/span12-->
       </div><!--/row-->
       <div class="row animated fadeInUp">
@@ -63,14 +64,12 @@
               <div class="active item">
                 <div class="row">
                   <div class="span6">
-                    <img src="assets/slide-half-1.png" alt=""/>
+                    <img src="assets/slide-half-1.png<?=$sv?>" alt=""/>
                   </div>
                   <div class="span4">
-                    <h2>Fancy Content Slider</h2>
-                    <p>Create a merry-go-round of any content you wish to provide an interactive slideshow of content.</p>
-                    <p>You can slide pictures, text, labels, videos & html content with little to no effort. HTML5 Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you.</p>
-                    <p>Place full width images or combine them with text block, links or more images using Bootstrap grid system.</p>
-                    <a class="btn btn-red" href="#">Awesome!</a>
+                    <h2>Nosotros</h2>
+                    <p>Somos Janaq, una empresa conformada por profesionales de amplia experiencia en desarrollo y dirección de proyectos de software, consultoría y capacitación en deversas tecnologías.</p>
+                    <a class="btn btn-red" href="#" onclick="$(function(){ $('#quienes-somos').click(); });return false;">¡Leer más!</a>
                   </div>
                 </div>
               </div>
@@ -78,14 +77,14 @@
               <div class="item">
                 <div class="row">
                   <div class="span6 animated rotateInDownLeft">
-                    <img src="assets/slide-half-2.png" alt=""/>
+                    <img src="assets/slide-half-2.png<?=$sv?>" alt=""/>
                   </div>
                   <div class="span4 animated rotateInUpRight">
-                    <h2>56 CSS3 Animations</h2>
-                    <p>You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules.</p>
-                    <p>animate.css is a bunch of cool, fun, and cross-browser cool animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness. Dynamically add animations using jQuery with ease.</p>
-                    <p>Don't hesitate to start creating your own creative work with this top notch feature.</p>
-                    <a class="btn btn-red" href="#">Want to start now?</a>
+                    <h2>Nuestros Servicios</h2>
+                    <p>Desarrollo de Aplicaciones web | Desarrollo de Aplicaciones Móviles</p>
+                    <p>Consultoría Técnica en soluciones Open Source</p>
+                    <p>Capacitación</p>
+                    <a class="btn btn-red" href="#" onclick="$(function(){ $('#servicios').click(); });return false;">Conocer más</a>
                   </div>
                 </div>
               </div>
@@ -93,36 +92,16 @@
               <div class="item">
                 <div class="row">
                   <div class="span6 animated fadeInUpBig">
-                    <img src="assets/slide-half-3.png" alt=""/>
+                    <img src="assets/slide-half-3.png<?=$sv?>" alt=""/>
                   </div>
                   <div class="span4 animated fadeInDownBig">
-                    <h2>Customizable Slider</h2>
-                    <p>Use Bootstrap scaffolding goodness to arrange pictures and text the way you want.</p>
-                    <p>Place full width images or combine them with text block, links or more images using Bootstrap grid system.</p>
-                    <a class="btn btn-primary" href="#">Start Now!</a>
+                    <h2>Únete a Nuestro Equipo</h2>
+                    <p>Estamos buscando los mejores talentos.</p>
+                    <p>¿Deseas unirte a nuestra familia?</p>
+                    <a class="btn btn-primary" href="#" onclick="$(function(){ $('#postula').click(); });return false;">¡Postula!</a>
                   </div>
                 </div>
               </div>
-              <!--slide-->
-              <div class="item animated fadeInUpBig">
-                <img src="assets/slide-full-1.png" alt=""/>
-              </div>
-              <!--slide-->
-              <div class="item">
-                <div class="row">
-                  <div class="span6 animated rotateInDownLeft">
-                    <div class="video-container">
-                      <!--iframe src="https://player.vimeo.com/video/46992613?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe-->
-                    </div>
-                  </div>
-                  <div class="span4 animated rotateInUpLeft">
-                    <h2>Responsive videos</h2>
-                    <p>Wrap each video in a predefined class container to achieve fluid width videos in your responsive web design.</p>
-                    <p>Every video will fit any screen width, inlcuding, desktop computers, tablets, smartphones and other devices.</p>
-                    <a class="btn btn-info" href="#">Mobile ready!</a>
-                  </div>
-                </div><!--/row-->
-              </div><!--/item-->
             </div><!--/carousel-inner-->
             <!-- Carousel nav -->
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -154,34 +133,34 @@
       <div class="row">   
         <div class="span4 feature">
           <h3>HTML5</h3>
-          <img src="assets/feature-html5.png" width="50" height="50" class="thumb" alt="thumb">
+          <img src="assets/feature-html5.png<?=$sv?>" width="50" height="50" class="thumb" alt="thumb">
           <p><strong>HTML5</strong> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you.</p>
         </div>
         <div class="span4 feature">
           <h3>Simple Layout</h3>
-          <img src="assets/feature-layout.png" width="50" height="50" class="thumb" alt="thumb">
+          <img src="assets/feature-layout.png<?=$sv?>" width="50" height="50" class="thumb" alt="thumb">
           <p>Bootstrap is designed to help people of all skill level—designer or developer, huge nerd or early beginner. Use it as a complete kit or use to start something more complex.</p>
         </div>      
         <div class="span4 feature">
           <h3>Web Fonts</h3>
-          <img src="assets/feature-webfonts.png" class="thumb" alt="thumb">
+          <img src="assets/feature-webfonts.png<?=$sv?>" class="thumb" alt="thumb">
           <p>Originally built with only modern browsers in mind, Bootstrap has evolved to include support for all major browsers (even IE7!) and, with Bootstrap 2, tablets and smartphones, too.</p>
         </div>
       </div><!--/row-->
       <div class="row">
         <div class="span4 feature">
           <h3>Modern Design</h3>
-          <img src="assets/feature-design.png" class="thumb" alt="thumb">
+          <img src="assets/feature-design.png<?=$sv?>" class="thumb" alt="thumb">
           <p>The best part about forms in Bootstrap is that all your inputs and controls look great no matter how you build them in your markup.</p>
         </div>
         <div class="span4 feature">
           <h3>Easy to Customize</h3>
-          <img src="assets/feature-customize.png" class="thumb" alt="thumb">
+          <img src="assets/feature-customize.png<?=$sv?>" class="thumb" alt="thumb">
           <p>Different types of form layouts require some changes to markup, but the controls themselves remain and behave the same.</p>
         </div>
         <div class="span4 feature">
           <h3>Great Support</h3>
-          <img src="assets/feature-support.png" class="thumb" alt="thumb">
+          <img src="assets/feature-support.png<?=$sv?>" class="thumb" alt="thumb">
           <p>States like error, warning, and success are included for each type of form control. Also included are styles for disabled controls. States like error, warning, and success are included.</p>
         </div>
       </div><!--/row-->
@@ -195,7 +174,7 @@
       </div>
       <div class="row">
         <div class="span4">
-          <img class="framed" src="assets/product-1.png" alt=""/>
+          <img class="framed" src="assets/product-1.png<?=$sv?>" alt=""/>
           <br/>
         </div>
         <div class="span5">
@@ -220,7 +199,7 @@
       <br/>
       <div class="row">
         <div class="span4">
-          <img class="framed" src="assets/product-2.png" alt=""/>
+          <img class="framed" src="assets/product-2.png<?=$sv?>" alt=""/>
           <br/>
         </div>
         <div class="span5">
@@ -239,7 +218,7 @@
       <br/>
       <div class="row">
         <div class="span4">
-          <img class="framed" src="assets/product-3.png" alt=""/>
+          <img class="framed" src="assets/product-3.png<?=$sv?>" alt=""/>
           <br/>
         </div>
         <div class="span5">
@@ -263,7 +242,7 @@
       <br/>
       <div class="row">
         <div class="span4">
-          <img class="framed" src="assets/product-4.png" alt=""/>
+          <img class="framed" src="assets/product-4.png<?=$sv?>" alt=""/>
           <br/>
         </div>
         <div class="span5">
@@ -292,7 +271,7 @@
           <ul class="thumbnails">
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #1"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #1"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -302,7 +281,7 @@
             </li> 
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #2"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #2"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -312,7 +291,7 @@
             </li>            
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #3"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #3"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -322,7 +301,7 @@
             </li>             
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #4"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #4"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -332,7 +311,7 @@
             </li>  
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #5"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #5"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -342,7 +321,7 @@
             </li>             
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #6"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #6"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -352,7 +331,7 @@
             </li> 
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #7"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #7"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -362,7 +341,7 @@
             </li>            
             <li class="span3">
               <div class="thumbnail">
-                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png" title="Portfolio Item #8"><img src="assets/portfolio-thumbnail-1.png" alt=""></a>
+                <a class="fancybox" rel="group" href="assets/portfolio-large-1.png<?=$sv?>" title="Portfolio Item #8"><img src="assets/portfolio-thumbnail-1.png<?=$sv?>" alt=""></a>
                 <div class="caption">
                   <h4>Image Title</h4>
                   <hr>
@@ -476,7 +455,7 @@
         <div class="span4">
           <h3>How about a map?</h3>
           <br/>
-          <img class="framed" src="assets/map.png" alt=""/>
+          <img class="framed" src="assets/map.png<?=$sv?>" alt=""/>
         </div>
       </div><!--/row-->
     </section>
@@ -529,12 +508,12 @@
     </div>
   </footer>
     
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.anchor.js" type="text/javascript"></script>
-  <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.0.6"></script>
-  <script src="js/script.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js<?=$sv?>"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js<?=$sv?>"><\/script>')</script>
+  <script src="js/bootstrap.min.js<?=$sv?>"></script>
+  <script src="js/jquery.anchor.js<?=$sv?>" type="text/javascript"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js<?=$sv?>"></script>
+  <script src="js/script.js<?=$sv?>"></script>
 
 </body>
 </html>
