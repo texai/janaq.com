@@ -40,7 +40,7 @@
             <li><a class="anchorLink" id="quienes-somos" href="#features">¿Quienes somos?</a></li>
             <li><a class="anchorLink" id="servicios" href="#services">Servicios</a></li>
             <li><a class="anchorLink" id="postula" href="#portfolio">Postula</a></li>
-            <li><a class="anchorLink" href="#contact">Contact</a></li>
+            <li><a class="anchorLink" id="contacto" href="#contact">Contact</a></li>
             <li><a class="anchorLink" href="#about">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -116,8 +116,8 @@
     <div class="strip">
       <div class="row">
         <div class="span12">
-          <a class="btn btn-red btn-large" href="#"><i class="icon-heart icon-white"></i> Download Sample!</a>
-          <a class="btn btn-inverse btn-large anchorLink" href="#portfolio">Browse Portfolio <i class="icon-share-alt icon-white"></i></a>
+          <a class="btn btn-red btn-large" href="#" onclick="$(function(){ $('#contact').click(); });return false;"><i class="icon-heart icon-white"></i> Contáctanos!</a>
+          <a class="btn btn-inverse btn-large anchorLink" href="#portfolio" onclick="$(function(){ $('#servicios').click(); });return false;">Mira nuestros servicios <i class="icon-share-alt icon-white"></i></a>
           <span class="call-to-action">Download a free sample of our great catalogue and portfolio now!</span>
           <p>*Don't worry, we have 7 years in the market, we know our stuff.</p>
         </div>
