@@ -118,8 +118,8 @@
         <div class="span12">
           <a class="btn btn-red btn-large" href="#" onclick="$(function(){ $('#contact').click(); });return false;"><i class="icon-heart icon-white"></i> Contáctanos!</a>
           <a class="btn btn-inverse btn-large anchorLink" href="#portfolio" onclick="$(function(){ $('#servicios').click(); });return false;">Mira nuestros servicios <i class="icon-share-alt icon-white"></i></a>
-          <span class="call-to-action">Download a free sample of our great catalogue and portfolio now!</span>
-          <p>*Don't worry, we have 7 years in the market, we know our stuff.</p>
+          <span class="call-to-action">No dudes en contactarnos para realizar alguna cotización</span>
+          <p>Los integrantes de Janaq tenemos varios años en el mercado que respaldan nuestro profesionalismo</p>
         </div>
       </div>
     </div>
